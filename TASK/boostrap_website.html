@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP ASSIGNMENT TASK WEBSITE</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, hsla(228, 77%, 71%, 1) 0%, hsla(317, 29%, 42%, 1) 100%);
+        }
+
+        .car img {
+            width: 100%;
+        }
+
+        .blurbg img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<!-- css file  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- js file  -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<body>
+    <!-- navibar  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider images  -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..//night-city-background.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>blurry city lights</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae expedita labore, ipsa maxime dicta
+                        delectus in velit cum provident placeat ullam, eum inventore, recusandae laudantium corporis
+                        natus totam architecto tempora?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../IMAGE/streatbg.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>late night streat</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim eius ratione quibusdam,
+                        aliquam quisquam quia natus itaque animi laboriosam reprehenderit recusandae illo possimus
+                        libero sequi! Unde recusandae atque cum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../IMAGE/blurbg.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>night city top view</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias earum fugiat minus minima neque
+                        libero sit ad optio voluptatibus. Iste modi quod sunt maxime omnis nihil earum illo natus.
+                        Temporibus!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- cards  -->
+
+    <div class="container mt-5 px-5">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="../IMAGE/code.jpg" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card one</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="../IMAGE/person-using-macbook-air.jpg" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card two</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="../IMAGE/boy and girl.jpg" class="card-img-top" alt="..." height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card three</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- first page  -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 mt-5 text-center px-5">
+                <h1 class="mt-5 ">blur monsoon nights</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem laboriosam accusamus esse a
+                    repellendus deleniti voluptates quod deserunt? Cupiditate quos est tenetur consequatur minus placeat
+                    quae iusto qui voluptate.</p>
+                <button type="button" class="btn btn-dark">read more</button>
+            </div>
+            <div class="car col-6">
+                <img src="../IMAGE/monsoon rain car.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- second page  -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="blurbg col-6 ">
+                <img src="../IMAGE/blurbg.jpg">
+            </div>
+            <div class="col-6 mt-5 text-center px-5">
+                <h1 class="mt-5">late night blurry lights</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo, inventore excepturi eos
+                    corporis recusandae doloribus voluptate eaque vel voluptatum dicta omnis. Ea pariatur mollitia nisi
+                    laborum. Reiciendis, aut quis.</p>
+                <button type="button" class="btn btn-dark">read more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- third page  -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 mt-5 text-center px-5">
+                <h1 class="mt-5 ">blur streat light nights</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem laboriosam accusamus esse a
+                    repellendus deleniti voluptates quod deserunt? Cupiditate quos est tenetur consequatur minus placeat
+                    quae iusto qui voluptate.</p>
+                <button type="button" class="btn btn-dark">read more</button>
+            </div>
+            <div class="car col-6">
+                <img src="../IMAGE/streatbg.jpg">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
